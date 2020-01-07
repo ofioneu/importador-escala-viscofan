@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*- 
+
 from flask import Flask, render_template,redirect, url_for, send_from_directory, flash
 from forms import MyForm
 
@@ -72,6 +74,13 @@ def importador():
                     arq = open (str(output_)+'escala A mes-'+str(mes)+'.txt', 'a')
                     arq.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"',"+str(t3e)+",'Exceção',"+str(t3s)+","+str(ida)+");"+'\n')
                     arq.close ()
+                
+                if (i == 0):
+                    arq_all.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"','null','Exceção','null',"+str(ida)+");"+'\n')
+                    
+                    arq = open (str(output_)+'escala A mes-'+str(mes)+'.txt', 'a')
+                    arq.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"','null','Exceção','null',"+str(ida)+");"+'\n')
+                    arq.close ()
             print('Arquivo criado com sucesso!!')
 
             dia=0
@@ -96,6 +105,13 @@ def importador():
 
                     arq = open (str(output_)+'escala B mes-'+str(mes)+'.txt', 'a')
                     arq.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"',"+str(t3e)+",'Exceção',"+str(t3s)+","+str(idb)+");"+'\n')
+                    arq.close ()
+                
+                if (i == 0):
+                    arq_all.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"','null','Exceção','null',"+str(ida)+");"+'\n')
+                    
+                    arq = open (str(output_)+'escala A mes-'+str(mes)+'.txt', 'a')
+                    arq.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"','null','Exceção','null',"+str(ida)+");"+'\n')
                     arq.close ()
             print('Arquivo criado com sucesso!!')
 
@@ -122,6 +138,13 @@ def importador():
                     arq = open (str(output_)+'escala C mes-'+str(mes)+'.txt', 'a')
                     arq.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"',"+str(t3e)+",'Exceção',"+str(t3s)+","+str(idc)+");"+'\n')
                     arq.close ()
+                
+                if (i == 0):
+                    arq_all.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"','null','Exceção','null',"+str(ida)+");"+'\n')
+                    
+                    arq = open (str(output_)+'escala A mes-'+str(mes)+'.txt', 'a')
+                    arq.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"','null','Exceção','null',"+str(ida)+");"+'\n')
+                    arq.close ()
             print('Arquivo criado com sucesso!!')
 
             dia=0
@@ -146,6 +169,13 @@ def importador():
 
                     arq = open (str(output_)+'escala D mes-'+str(mes)+'.txt', 'a')
                     arq.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"',"+str(t3e)+",'Exceção',"+str(t3s)+","+str(idd)+");"+'\n')
+                    arq.close ()
+                
+                if (i == 0):
+                    arq_all.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"','null','Exceção','null',"+str(ida)+");"+'\n')
+                    
+                    arq = open (str(output_)+'escala A mes-'+str(mes)+'.txt', 'a')
+                    arq.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"','null','Exceção','null',"+str(ida)+");"+'\n')
                     arq.close ()
             print('Arquivo criado com sucesso!!')
 
@@ -172,6 +202,15 @@ def importador():
                     arq = open (str(output_)+'escala E mes-'+str(mes)+'.txt', 'a')
                     arq.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"',"+str(t3e)+",'Exceção',"+str(t3s)+","+str(ide)+");"+'\n')
                     arq.close ()
+                
+                if (i == 0):
+                    arq_all.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"','null','Exceção','null',"+str(ida)+");"+'\n')
+                    
+                    arq = open (str(output_)+'escala A mes-'+str(mes)+'.txt', 'a')
+                    arq.write ("INSERT INTO dia (id,data,descricao,entrada,nome,saida,escala) VALUES (nextval('dia_seq'),"+"'"+str(ano)+"-"+str(mes)+"-"+str(dia)+"','"+str(excecao_)+"','null','Exceção','null',"+str(ida)+");"+'\n')
+                    arq.close ()
+
+                
             arq_all.close()
             print('Arquivo criado com sucesso!!')
             flash('Arquivos gerados com sucesso!', "alert-success")
